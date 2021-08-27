@@ -4,19 +4,16 @@ namespace TrackAndTraceDojo
 {
     public class DojoHandler
     {
-        public List<string> GetNames()
-        {
-            List<string> names = new();
-            names.Add("Tomás");
-            names.Add("Lucas");
-            names.Add("Samuel");
-            names.Add("Henrrique");
-            names.Add("Saulo");
-            names.Add("Caio");
-            names.Add("Diego");
+        public List<string> GetNames() => new List<string> { "Tomás", "Lucas", "Samuel", "Henrique", "Saulo", "Caio", "Diego" };
+    }
 
-            return names;
-        }
-        
+
+    public interface ISort
+    {
+        List<string> Randomize();
+    }
+    public class Sort : ISort
+    {
+
     }
 }

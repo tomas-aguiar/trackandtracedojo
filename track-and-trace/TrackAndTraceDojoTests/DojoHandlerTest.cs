@@ -7,10 +7,12 @@ namespace TrackAndTraceDojoTests
     public class DojoHandlerTest
     {
         private readonly DojoHandler _sut;
+        private readonly Sort _sort;
 
         public DojoHandlerTest()
         {
             _sut = new DojoHandler();
+            _sort = new NSubstitute(Sort);
         }
         
         [Fact]
@@ -22,10 +24,9 @@ namespace TrackAndTraceDojoTests
         }
 
         [Fact]
-        public void GetsListOfRandomNames(){
-            var itemTest = new List<string>();
-            List<string> listOfRanomNames = randomizeNames(List<string>);
-            
+        public void GetListOfRandomNames()
+        {
+            var sut = _sort.Random();
         }
     }
 }

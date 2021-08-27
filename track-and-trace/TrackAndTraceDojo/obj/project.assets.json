@@ -5087,24 +5087,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samuel.b.rodrigues\\.nuget\\packages\\": {},
+    "C:\\Users\\lucas.baffe.segura\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dojo\\new\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.baffe.segura\\source\\repos\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
       "projectName": "TrackAndTraceDojo",
-      "projectPath": "C:\\dojo\\new\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
-      "packagesPath": "C:\\Users\\samuel.b.rodrigues\\.nuget\\packages\\",
-      "outputPath": "C:\\dojo\\new\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\obj\\",
+      "projectPath": "C:\\Users\\lucas.baffe.segura\\source\\repos\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+      "packagesPath": "C:\\Users\\lucas.baffe.segura\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas.baffe.segura\\source\\repos\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\samuel.b.rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\lucas.baffe.segura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5149,7 +5155,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
