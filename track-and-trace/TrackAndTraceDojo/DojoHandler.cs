@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace TrackAndTraceDojo
 {
@@ -14,6 +15,9 @@ namespace TrackAndTraceDojo
     }
     public class Sort : ISort
     {
-
+        public List<string> Randomize()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

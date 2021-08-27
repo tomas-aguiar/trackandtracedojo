@@ -1,18 +1,19 @@
 ﻿using TrackAndTraceDojo;
 using Xunit;
 using NSubstitute;
+using System.Collections.Generic;
 
 namespace TrackAndTraceDojoTests
 {
     public class DojoHandlerTest
     {
         private readonly DojoHandler _sut;
-        private readonly Sort _sort;
+        private readonly ISort _sort;
 
         public DojoHandlerTest()
         {
             _sut = new DojoHandler();
-            _sort = new NSubstitute(Sort);
+            _sort = Substitute.For<ISort>();
         }
         
         [Fact]
@@ -26,7 +27,13 @@ namespace TrackAndTraceDojoTests
         [Fact]
         public void GetListOfRandomNames()
         {
-            var sut = _sort.Random();
+            List<string> names = new List<string>();
+            names.Add("name1");
+            names.Add("name2");
+
+            _sort.Randomize();
+
+            _sort.Received(1).Randomize();
         }
     }
 }
