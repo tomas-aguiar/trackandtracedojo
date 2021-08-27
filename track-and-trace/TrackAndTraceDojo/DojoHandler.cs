@@ -6,7 +6,16 @@ namespace TrackAndTraceDojo
     {
         public List<string> GetNames()
         {
-            return new List<string>();
+            List<string> names = new();
+            names.Add("Tomás");
+            names.Add("Lucas");
+            names.Add("Samuel");
+            names.Add("Henrrique");
+            names.Add("Saulo");
+            names.Add("Caio");
+            names.Add("Diego");
+
+            return names;
         }
     }
 }

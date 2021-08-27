@@ -5087,19 +5087,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomas.h.aguiar\\.nuget\\packages\\": {}
+    "C:\\Users\\samuel.b.rodrigues\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+      "projectUniqueName": "C:\\dojo\\new\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
       "projectName": "TrackAndTraceDojo",
-      "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
-      "packagesPath": "C:\\Users\\tomas.h.aguiar\\.nuget\\packages\\",
-      "outputPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\obj\\",
+      "projectPath": "C:\\dojo\\new\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+      "packagesPath": "C:\\Users\\samuel.b.rodrigues\\.nuget\\packages\\",
+      "outputPath": "C:\\dojo\\new\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tomas.h.aguiar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samuel.b.rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5145,7 +5149,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
