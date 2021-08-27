@@ -22,6 +22,10 @@ namespace TrackAndTraceDojoTests
         }
 
         [Fact]
-        public void 
+        public void GetsListOfRandomNames(){
+            var itemTest = new List<string>();
+            List<string> listOfRanomNames = randomizeNames(List<string>);
+            
+        }
     }
 }
