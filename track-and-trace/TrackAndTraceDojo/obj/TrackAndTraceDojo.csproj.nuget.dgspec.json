@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj": {}
+    "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj": {}
   },
   "projects": {
-    "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj": {
+    "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+        "projectUniqueName": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
         "projectName": "TrackAndTraceDojo",
-        "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+        "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
         "packagesPath": "C:\\Users\\tomas.h.aguiar\\.nuget\\packages\\",
-        "outputPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojo\\obj\\",
+        "outputPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomas.h.aguiar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

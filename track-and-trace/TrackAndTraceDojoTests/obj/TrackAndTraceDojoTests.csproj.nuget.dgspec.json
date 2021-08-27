@@ -1,17 +1,101 @@
 {
   "format": 1,
   "restore": {
-    "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj": {}
+    "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj": {}
   },
   "projects": {
-    "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj": {
+    "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj",
+        "projectUniqueName": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj",
         "projectName": "TrackAndTraceDojoTests",
-        "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj",
+        "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojoTests\\TrackAndTraceDojoTests.csproj",
         "packagesPath": "C:\\Users\\tomas.h.aguiar\\.nuget\\packages\\",
-        "outputPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\TrackAndTraceDojoTests\\obj\\",
+        "outputPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojoTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tomas.h.aguiar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj": {
+                "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+        "projectName": "TrackAndTraceDojo",
+        "projectPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\TrackAndTraceDojo.csproj",
+        "packagesPath": "C:\\Users\\tomas.h.aguiar\\.nuget\\packages\\",
+        "outputPath": "C:\\tomas-aguiar-git\\trackandtracedojo\\track-and-trace\\TrackAndTraceDojo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomas.h.aguiar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,25 +124,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
+            "NSubstitute": {
               "target": "Package",
-              "version": "[16.7.1, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.3.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[4.2.2, )"
             }
           },
           "imports": [
