@@ -26,7 +26,7 @@ namespace TrackAndTraceDojo
                 List<RamdomNames> names = new List<RamdomNames>();
                 namesList.ForEach(x => names.Add(new RamdomNames {Id = Guid.NewGuid(), Name = x}));
                 list = names.OrderBy(i => i.Id).Select(x => x.Name).ToList();
-            } while (list == namesList);
+            } while (!list.Equals(namesList));
             
 
             return list;

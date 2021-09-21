@@ -24,7 +24,7 @@ namespace TrackAndTraceDojoTests
             List<string> names = new List<string>();
             names.Add("name1");
             names.Add("name2");
-
+            names.Add("name3");
             var namesList = Sort.Randomize(names);
 
             Assert.NotEqual(names, namesList);
