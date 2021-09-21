@@ -31,7 +31,7 @@ namespace TrackAndTraceDojoTests
             names.Add("name1");
             names.Add("name2");
 
-            List<string> namesList = _sort.Randomize();
+            List<RamdomNames> namesList = _sort.Randomize();
 
             _sort.Received(1).Randomize();
             Assert.NotEqual(names, namesList);
