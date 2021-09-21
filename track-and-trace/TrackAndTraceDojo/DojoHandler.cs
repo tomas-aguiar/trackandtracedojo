@@ -16,21 +16,18 @@ namespace TrackAndTraceDojo
         public string Name;
     }
 
-    public interface ISort
+    public static class Sort
     {
-        List<string> Randomize();
-    }
-
-    public class Sort : ISort
-    {
-        public List<string> Randomize()
+        public static List<string> Randomize(List<string> namesList)
         {
-            List<RamdomNames> names = new List<RamdomNames>();
-            Random random = new Random();
-
-            DojoHandler.GetNames().ForEach(x => names.Add(new RamdomNames { Id = Guid.NewGuid(), Name = x }));
-
-            var list = names.OrderBy(i => i.Id).Select(x => x.Name).ToList();
+            List<string> list;
+            do
+            {
+                List<RamdomNames> names = new List<RamdomNames>();
+                namesList.ForEach(x => names.Add(new RamdomNames {Id = Guid.NewGuid(), Name = x}));
+                list = names.OrderBy(i => i.Id).Select(x => x.Name).ToList();
+            } while (list == namesList);
+            
 
             return list;
         }
