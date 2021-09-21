@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TrackAndTraceDojo
 {
@@ -17,21 +18,21 @@ namespace TrackAndTraceDojo
 
     public interface ISort
     {
-        List<RamdomNames> Randomize();
+        List<string> Randomize();
     }
 
     public class Sort : ISort
     {
-        public List<RamdomNames> Randomize()
+        public List<string> Randomize()
         {
             List<RamdomNames> names = new List<RamdomNames>();
             Random random = new Random();
-            
-            DojoHandler.GetNames().ForEach(x => names.Add(new RamdomNames {Id = Guid.NewGuid(), Name = x }));
-            
-            
 
-            return names;
+            DojoHandler.GetNames().ForEach(x => names.Add(new RamdomNames { Id = Guid.NewGuid(), Name = x }));
+
+            var list = names.OrderBy(i => i.Id).Select(x => x.Name).ToList();
+
+            return list;
         }
     }
 }

@@ -12,14 +12,13 @@ namespace TrackAndTraceDojoTests
 
         public DojoHandlerTest()
         {
-            _sut = new DojoHandler();
             _sort = Substitute.For<ISort>();
         }
         
         [Fact]
         public void GetsTheListOfNames()
         {
-            var result = _sut.GetNames();
+            var result = DojoHandler.GetNames();
 
             Assert.Equal(7, result.Count);
         }
