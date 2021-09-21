@@ -31,9 +31,10 @@ namespace TrackAndTraceDojoTests
             names.Add("name1");
             names.Add("name2");
 
-            _sort.Randomize();
+            List<string> namesList = _sort.Randomize();
 
             _sort.Received(1).Randomize();
+            Assert.NotEqual(names, namesList);
         }
     }
 }

@@ -8,6 +8,11 @@ namespace TrackAndTraceDojo
         public List<string> GetNames() => new List<string> { "Tomás", "Lucas", "Samuel", "Henrique", "Saulo", "Caio", "Diego" };
     }
 
+    public class RamdomNames
+    {
+        public int id;
+        public string name;
+    }
 
     public interface ISort
     {
@@ -17,6 +22,11 @@ namespace TrackAndTraceDojo
     {
         public List<string> Randomize()
         {
+            List<RamdomNames> names = new List<RamdomNames>();
+            Random random = new Random();
+            RamdomNames name = new RamdomNames();
+            name.id = 
+            names.Add( random.
             throw new NotImplementedException();
         }
     }
