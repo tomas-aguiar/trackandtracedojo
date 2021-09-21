@@ -12,7 +12,7 @@ namespace TrackAndTraceDojoTests
         public DojoHandlerTest()
         {
             _sut = new DojoHandler();
-            _sort = new NSubstitute(Sort);
+            _sort = new Substitute(Sort);
         }
         
         [Fact]
