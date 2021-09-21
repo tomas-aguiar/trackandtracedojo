@@ -5,29 +5,33 @@ namespace TrackAndTraceDojo
 {
     public class DojoHandler
     {
-        public List<string> GetNames() => new List<string> { "Tomás", "Lucas", "Samuel", "Henrique", "Saulo", "Caio", "Diego" };
+        public static List<string> GetNames() => new List<string>
+            {"Tomás", "Lucas", "Samuel", "Henrique", "Saulo", "Caio", "Diego"};
     }
 
     public class RamdomNames
     {
-        public int id;
-        public string name;
+        public Guid Id;
+        public string Name;
     }
 
     public interface ISort
     {
-        List<string> Randomize();
+        List<RamdomNames> Randomize();
     }
+
     public class Sort : ISort
     {
-        public List<string> Randomize()
+        public List<RamdomNames> Randomize()
         {
             List<RamdomNames> names = new List<RamdomNames>();
             Random random = new Random();
-            RamdomNames name = new RamdomNames();
-            name.id = 
-            names.Add( random.
-            throw new NotImplementedException();
+            
+            DojoHandler.GetNames().ForEach(x => names.Add(new RamdomNames {Id = Guid.NewGuid(), Name = x }));
+            
+            
+
+            return names;
         }
     }
 }
